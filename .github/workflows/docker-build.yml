@@ -10,8 +10,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Npm install
+        run: npm install
       - name: Npm build
-        run: npm install | npm run build
+        run: npm run build
       # 设置多架构内核
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
