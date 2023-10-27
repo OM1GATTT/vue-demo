@@ -23,4 +23,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ltom1ga/vue-demo-docker:1.0
+          tags: ltom1ga/vue-demo-docker:2.0
