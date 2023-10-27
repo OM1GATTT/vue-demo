@@ -7,12 +7,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Npm build
-        uses: actions/checkout@v4
         uses: actions/setup-node@v3
         with:
           node-version: 18
-        run: npm install
-        run: npm build
+        run: npm install | npm run build
       # 设置多架构内核
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
