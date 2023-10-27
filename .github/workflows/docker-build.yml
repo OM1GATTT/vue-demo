@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: action/checkout@v2
+        uses: actions/checkout@v2
       # 设置多架构内核
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
