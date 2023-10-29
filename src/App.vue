@@ -6,7 +6,7 @@ const getList = async () => {
   try {
     const response = await axios.get("http://127.0.0.1:8888/list");
     console.log(response.data);
-    returnresponse.data;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
